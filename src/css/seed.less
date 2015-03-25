@@ -1,0 +1,123 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@import "seattletimes";
+@import "values";
+@import "flexbox";
+
+main {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  width: 800px;
+}
+
+.air-table {
+  font-size: 13px;
+  font-family: @df-sans;
+  border-collapse: collapse;
+  max-width: 100%;
+
+  th, td {
+    padding: 2px 2px 2px 8px;
+  }
+
+  th {
+    background: @df-dark-gray;
+    color: @df-off-white;
+    cursor: pointer;
+
+    &.unsortable {
+      cursor: default;
+    }
+  }
+
+  td {
+    border-bottom: 1px solid @df-light-gray;
+  }
+
+  .number {
+    text-align: right;
+  }
+
+  .text {
+    text-align: left;
+  }
+
+  //columns
+  @media @mobile {
+    .city, .employees, .engineers, .breakdown-e {
+      display: none;
+    }
+  }
+}
+
+.graph {
+  .bar {
+    .display-flex;
+    // .align-items(flex-end);
+    width: 100%;
+    height: 20px;
+    background: #F0F0FF;
+
+    .segment {
+      @base: #102;
+      // .flex(1);
+
+      &.over-0 { background: lighten(@base, 0%) }
+      &.over-10 { background: lighten(@base, 20%) }
+      &.over-15 { background: lighten(@base, 40%) }
+      &.over-20 { background: lighten(@base, 60%) }
+      &.over-30 { background: lighten(@base, 80%) }
+    }
+  }
+}
+
+input.bar-focus {
+  display: none;
+
+  & + label {
+    position: relative;
+    display: block;
+
+    .tooltip {
+      display: none;
+      position: absolute;
+      top: 8px;
+      right: 100%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+      background: white;
+      padding: 8px;
+      z-index: 999;
+      min-width: 200px;
+
+      &::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 100%;
+        border-style: solid;
+        border-color: white transparent transparent white;
+        border-width: 10px 10px 0 0;
+      }
+
+      h4 {
+        margin: 0;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+    }
+  }
+
+  &:checked + label .tooltip {
+    display: block;
+  }
+}

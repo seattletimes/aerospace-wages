@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= json.project.title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <%= t.include("partials/_adHead.html") %>
+  </head>
+  <body>
+
+    <responsive-child>
+      <main ng-controller="TableController">
+        <table class="air-table">
+          <thead>
+            <tr>
+              <th class="name text" ng-click="sortOn('name')"> Name
+              <th class="city text" ng-click="sortOn('city')"> City
+              <th class="employees number" ng-click="sortOn('employees')"> Employees
+              <th class="engineers number" ng-click="sortOn('engineers.total')"> Engineers
+              <th class="production number" ng-click="sortOn('production.total')"> Production staff
+              <th class="production-lowest number" ng-click="sortOn('production.lowPercent')"> $15/hr or less
+              <th class="breakdown-p graph" ng-click="sortOn('production.score')"> Breakdown
+          </thead>
+          <tbody>
+            <tr ng-repeat="row in data">
+              <td class="name text"> {{row.name}}
+              <td class="city text"> {{row.city}}
+              <td class="employees number"> {{row.employees | number}}
+              <td class="engineers number"> {{row.engineers.total | number}}
+              <td class="production number"> {{row.production.total | number}}
+              <td class="production-lowest number"> {{row.production.lowest / row.production.total * 100 | number:1}}%
+              <td class="breakdown-p graph">
+                <input class="bar-focus" type="radio" name="bar" id="site-{{row.id}}">
+                <label class="bar-focus-label" for="site-{{row.id}}">
+                  <div class="bar">
+                    <div 
+                      ng-repeat="segment in row.production.breakdown"
+                      class="segment over-{{segment.over}}"
+                      test="{{segment.data}}"
+                      ng-style="{
+                        width: (segment.data / row.production.total) * 100 + '%'
+                      }"
+                    ></div>
+                  </div>
+                  <div class="tooltip">
+                    <h4>Production breakdown</h4>
+                    <ul>
+                      <li ng-repeat="segment in row.production.breakdown">
+                        {{segment.label}}: <b>{{segment.data}}</b>
+                        ({{ segment.data / row.production.total * 100 | number:1}}%)
+                      </li>
+                    </ul>
+                  </div>
+                </label>
+          </tbody>
+        </table>
+      </main>
+    </responsive-child>
+
+    <script>
+<%
+var buckets = [0, 15, 20, 30];
+var groups = ["prod", "eng"];
+var labels = ["Under $15", "$15.01 to $20", "$20.01 to $30", "Over $30"];
+
+var companyData = json.AerospaceWorkers_Companies.map(function(row) {
+  var stats = {
+    prod: [],
+    eng: []
+  };
+  var scores = {
+    prod: 0,
+    eng: 0
+  };
+  var max = {
+    prod: 0,
+    eng: 0
+  };
+  var lowest = 0;
+  groups.forEach(function(prefix) {
+    buckets.forEach(function(suffix, i) {
+      var key = prefix + suffix;
+      var value = row[key] * 1;
+      stats[prefix].push({
+        label: labels[i],
+        data: value,
+        over: suffix * 1
+      });
+      if (prefix == "prod" && suffix < 15) {
+        lowest += value;
+      }
+      scores[prefix] += suffix * value;
+      if (value > max[prefix]) max[prefix] = value;
+    });
+  });
+  return {
+    name: row.name,
+    city: row.city,
+    zip: row.zip,
+    id: row.siteid,
+    employees: row.employees * 1,
+    production: {
+      total: row.production * 1,
+      breakdown: stats.prod,
+      score: scores.prod / row.production * 1,
+      lowPercent: stats.prod[0].data / row.production,
+      max: max.prod,
+      lowest: lowest
+    },
+    engineers: {
+      total: row.engineers * 1,
+      breakdown: stats.eng,
+      score: scores.eng / row.engineers * 1,
+      max: max.eng
+    }
+  };
+});
+%>
+window.industryData = <%= JSON.stringify(companyData) %>;
+    </script>
+
+    <script src="app.js"></script>
+    <%= json.project.production ? t.include("partials/_adFoot.html") : "" %>
+    <%= json.project.production ? t.include("partials/_workHere.html") : "" %>
+  </body>
+</html>

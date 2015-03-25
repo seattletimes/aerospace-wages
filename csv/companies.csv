@@ -1,0 +1,118 @@
+siteID,taxRegistration,name,address,city,state,zip,employees,production,engineers,prod0,prod15,prod20,prod30,eng0,eng10,eng15,eng20,eng30
+1,173005221,Cascade Gasket & Manufacturing Company,7100 Fort Dent Way Ste 280,Tukwila,WA,98188,160,104,5,79,14,11,0,0,0,1,4,0
+2,173005665,Protective Coating ,1208 4th Ave N,Kent,WA,98032,291,208,2,133,54,21,0,0,0,0,0,2
+3,177006487,Renton Coil Spring Company,425 S 7th st,Renton,WA,98057,63,40,3,0,18,18,4,0,0,0,1,2
+4,177006653,Aero Plastics ,903 Houser Way North,Renton,WA,98057,37,28,0,4,12,9,3,0,0,0,0,0
+5,177007507,Harper Engineering Company,700 SW 7TH STREET,Renton,WA,98057,67,54,6,31,14,7,2,0,0,1,1,4
+6,178005030,The Boeing Company (Auburn),700 15th st sw,Auburn,WA,98001,5948,3713,506,37,557,446,2636,0,0,0,15,491
+7,178005030,The Boeing Company (Everett),3003 w casino rd,Everett,WA,98024,37661,18754,8616,0,3376,4501,10877,0,0,0,86,8530
+8,178005030,The Boeing Company (Puyallup),18001 CANYON RD E,Puyallup,WA,98375,1701,1220,111,12,232,110,866,0,0,0,2,109
+9,178005030,The Boeing Company (Renton),800 Logan Ave North,Renton,WA,98055,12132,6024,2337,0,723,1084,4217,0,0,0,23,2314
+10,178005030,The Boeing Company (Seattle/Tukwila),7755 e marginal way S,Seattle,WA,98108,11706,3090,4045,0,185,402,2503,0,0,0,40,4005
+11,278000680,Globe Machine Manufacturing Company,701 E 'D' ST,Tacoma,WA,98401,132,72,17,7,16,46,3,0,0,0,5,12
+12,278034781,Precision Machine Works ,2024 Puyallup Ave,Tacoma,WA,98421,192,145,9,0,42,86,17,0,0,0,2,7
+13,278036069,General Plastics Manufacturing Company,PO Box 9097,Tacoma,WA,98409,175,119,6,24,71,18,6,0,0,0,5,1
+14,278047588,Tool-Gauge & Machine Works ,4336 S. Adams St,Tacoma,WA,98409,99,84,0,44,7,23,11,0,0,0,0,0
+15,313000744,ABW Technologies ,6720 191st PL NE,Arlington,WA,98233,71,64,0,0,64,0,0,0,0,0,0,0
+16,409000756,Goodrich Corporation (Carbon Operations),11135 W. Westbow Lane,Spokane,WA,99224,160,99,22,30,40,30,0,0,0,2,10,11
+17,409003290,Alcoa ,6200 Malaga Alcoa Highway,Malaga,WA,98828,482,358,3,0,0,301,57,0,0,0,0,3
+18,409021238,Pacific Metallurgical ,925 5th Ave S,Kent,WA,98032,71,54,0,20,21,8,5,0,0,0,0,0
+19,578015454,GM Nameplate ,2040 15th Ave W,Seattle,WA,98119,487,335,58,127,117,67,23,0,0,3,28,27
+20,578028756,Vaupell Industrial Plastics ,1144 NW 53rd St,Seattle,WA,98107,332,265,17,164,82,16,5,0,0,1,5,11
+21,578064829,AvtechTyee ,6500 Merrill Creek Parkway,Everett,WA,98203,336,204,37,35,75,82,12,0,0,0,4,33
+22,578076709,Pacific Tool ,15235 NE 92nd Street,Redmond,WA,98052,52,32,1,3,10,19,0,0,0,0,0,1
+23,578078492,JD Ott Company,2244 6th Ave S,Seattle,WA,98134,109,68,6,17,16,33,1,0,0,0,2,4
+24,600025148,Pegasus Northwest ,7404 S 262nd St,Kent,WA,98032,61,42,1,34,5,3,0,0,0,0,1,0
+25,600087981,AIM Aerospace (Sumner) ,1516 Fryar Ave,Sumner,WA,98390,343,314,0,237,42,25,9,0,0,0,0,0
+26,600105018,Spectralux Corporation,12335 134th Court NE,Redmond,WA,98052,66,29,12,3,14,11,1,0,0,0,0,12
+27,600123298,Giddens Industries ,2600 94th Street SW,Everett,WA,98204,282,194,11,56,74,60,4,0,0,0,3,8
+28,600134439,4M Company (WA),15660 Nelson Place S,Seattle,WA,98188,66,51,0,42,3,6,0,0,0,0,0,0
+29,600175586,Primus International,701 Milwaukee Ave. N,Algona,WA,98001,281,199,26,26,70,72,32,0,1,2,7,17
+30,600187405,Altek,22819 E Appleway,Liberty Lake,WA,99021,176,137,4,100,19,16,1,0,0,0,2,2
+31,600198190,Saint Gobain Performance Plastics Corporation,507 North Levee Road,Puyallup,WA,98371,94,79,8,21,25,26,6,0,0,0,1,7
+32,600214903,Hill Aerosystems,911 Battersby Ave,Enumclaw,WA,98022,125,97,0,38,24,34,1,0,0,0,0,0
+33,600305426,PM Testing Laboratory,3921 Pacific Highway East,Tacoma,WA,98424,68,51,0,38,7,6,0,0,0,0,0,0
+34,600321947,Parker Hannifin Corporation,14690 NE 95TH STREET SUITE 104,Redmond,WA,98052,75,2,35,0,1,1,0,0,0,0,3,32
+35,600352074,Umbra Cuscinetti,6707 HARDESON ROAD,Everett,WA,98203,99,63,7,16,13,28,6,0,0,0,2,5
+36,600373023,Royell Manufacturing,3817 Smith Ave,Everett,WA,98201,153,104,11,27,35,38,4,0,0,0,5,6
+37,600400428,Blue Streak Finishers,1520 80th st s.w.,Everett,WA,98203,76,59,0,31,23,5,0,0,0,0,0,0
+38,600411300,Magnetic & Penetrant Services Company,8135 1st Ave S,Seattle,WA,98108,196,157,0,94,42,16,5,0,0,0,0,0
+39,600418697,La Croix Industries ,5416 S 226th St,Kent,WA,98032,65,53,0,17,13,14,9,0,0,0,0,0
+40,600426749,Jamco America,1018 80TH ST SW,Everett,WA,98203,411,163,106,10,148,5,0,0,0,5,27,74
+41,600477308,P & J Machine,2601 Inter Ave,Puyallup,WA,98372,93,47,7,5,10,17,15,0,1,4,1,1
+42,600508762,Kaasco,13000 Beverly Park Road,Mukilteo,WA,98275,160,116,6,88,17,10,0,0,0,3,3,0
+43,600533149,Hexcel Corporation (Burlington),15062 Steele Road,Burlington,WA,98233,193,141,12,11,75,55,0,0,0,0,3,9
+44,600533149,Hexcel Corporation (Kent),19819 84th Avenue South,Kent,WA,98064,653,502,68,30,226,241,5,0,0,1,12,55
+45,600538574,Accra Manufacturing,17703 15th AVE SE,Bothell,WA,98012,177,140,13,70,70,0,0,0,0,0,4,9
+46,600624255,Seacast,6130 31st Ave. NE,Marysville,WA,98271,221,183,12,137,38,5,2,0,0,1,5,6
+47,600630382,Electroimpact,4413 Chennault Beach Rd.,Mukilteo,WA,98275,519,140,367,48,14,32,46,0,0,4,108,255
+48,600642070,Onamac Industries,11504 Airport Road,Everett,WA,98204,107,68,5,17,13,33,5,0,0,0,0,5
+49,601001501,Cub Crafters,1918 S 16th Ave,Yakima,WA,98903,119,81,13,40,33,8,0,0,0,0,12,1
+50,601002786,The Danner Corporation,307 Oravetz Pl SE,Auburn,WA,98092,177,133,6,74,37,17,5,0,0,0,3,3
+51,601019505,Prototron,15225 NE 95th Street,Redmond,WA,98052,72,56,1,14,34,6,3,0,0,0,0,1
+52,601040967,Honeywell International,15001 NE 36th Street,Redmond,WA,98052,683,239,306,0,137,54,49,0,0,0,21,285
+53,601051063,Multifab,3808 N SULLIVAN RD ,Spokane Valley,WA,99216,153,97,2,77,20,0,0,0,0,0,1,1
+54,601051903,GE Aviation Systems,2720 W. Washington Avenue,Yakima,WA,98903,290,162,55,31,41,73,18,0,0,3,10,42
+55,601083658,Automatic Products Company,5858 S. 194th St,Kent,WA,98032,77,55,1,3,29,23,1,0,0,0,1,0
+56,601096435,AIM Aerospace (Renton),705 SW 7TH ST,Renton,WA,98055,239,169,19,106,37,22,3,0,0,1,8,10
+57,601147746,JWD Machine,7215 45TH ST CT E,Fife,WA,98424,93,68,5,11,22,33,2,0,0,0,5,0
+58,601203459,Hytek Finishes (Esterline),8127 SOUTH 216TH ST,Kent,WA,98032,239,200,4,102,43,50,4,0,1,0,0,3
+59,601203477,Korry Electronics (Esterline),11910 Beverly Park Road,Everett,WA,98204,652,317,155,22,178,92,29,0,0,3,39,115
+60,601255951,Lifeport,1610 Heritage Street,Woodland,WA,98674,208,83,39,4,36,28,15,0,0,8,8,23
+61,601370903,B/E Aerospace (Everett),11404 Commando Road,Everett,WA,98204,90,31,19,0,27,3,1,0,0,1,6,12
+62,601370903,B/E Aerospace (Lav Admin),11404 Commando Road,Everett,WA,98204,151,48,49,0,9,13,26,0,0,0,0,49
+63,601370903,B/E Aerospace (Marysville),6330 31ST AVE NE,Marysville,WA,98271,328,105,121,0,74,28,3,0,0,2,25,93
+64,601382886,JL Manufacturing,12310 Hwy 99 S Unit 110,Everett,WA,98204,52,25,0,0,14,11,0,0,0,0,0,0
+65,601388686,Toray Composites America,19002 50th Ave E,Tacoma,WA,98446,507,351,52,0,218,116,18,0,0,0,21,31
+66,601395226,The Jorgensen Forge Corporation,8531 E. Marginal Way S. ,Seattle,WA,98108,157,85,2,5,28,47,5,0,0,0,0,2
+67,601435309,Universal Aerospace Company,18640 59th DR NE,Arlington,WA,98270,137,93,18,67,21,4,1,1,2,5,8,1
+68,601510210,A & G Machine,1231 37th St NW,Auburn,WA,98001,81,68,0,2,9,27,30,0,0,0,0,0
+69,601523259,Eldec Corporation,16700 13th Ave W,Lynnwood,WA,98046,723,332,208,0,139,136,56,0,0,2,15,191
+70,601569692,Janicki Industries,1476 Moore Street,Sedro Wooley,WA,98284,585,345,125,3,204,69,69,0,0,0,38,88
+71,601594533,Valley Machine Shop,1166 6th Ave N,Kent,WA,98032,65,37,0,6,15,15,0,0,0,0,0,0
+72,601595776,United Technologies (Goodrich),2701 94th Street S.W.,Everett,WA,98204,52,18,11,0,5,10,3,0,0,0,1,10
+73,601596152,Panasonic Avionics Corporation,22333 29th Drive SE,Bothell,WA,98021,468,77,120,0,15,40,22,0,0,1,26,93
+74,601635772,Composite Solutions Corporation,1820 West Valley Hwy N,Auburn,WA,98001,72,48,8,26,16,5,1,0,0,1,3,4
+75,601637828,AIM Aerospace (Auburn),1502 20th st NW,Auburn,WA,98001,326,304,0,204,30,49,21,0,0,0,0,0
+76,601660375,IDD Aerospace (Zodiac),18225 NE 76TH ST,Redmond,WA,98052,154,89,31,24,30,32,3,0,0,0,5,26
+77,601678606,Stoddard International,18660 58th Ave. NE,Arlington,WA,98223,72,52,2,34,18,0,0,0,1,0,0,1
+78,601771787,Northwest Aerospace Technologies (Zodiac),2204 Hewitt Ave,Everett,WA,98201,201,66,94,24,18,20,4,0,0,0,15,79
+79,601775003,Bodycote IMT,4605 Northwest Pacific Rim Boulevard,Camas,WA,98607,58,34,4,13,9,13,0,0,1,0,2,1
+80,601780536,Labinal,2300 Merrill Creek Parkway,Everett,WA,98203,158,0,144,0,0,0,0,0,0,1,52,91
+81,601825210,Custom Interface,401 S Larch St,Bingen,WA,98605,59,33,3,21,12,0,0,0,0,0,2,1
+82,601871214,Compass Aerospace Northwest,821 3rd Ave So,Kent,WA,98032,92,80,0,22,25,25,9,0,0,0,0,0
+83,601884825,LMI Aerospace,101 Western Street,Auburn,WA,98001,158,90,1,40,42,6,2,0,0,0,0,1
+84,601936477,Angeles Composite Technologies,2138 W 18th Street,Port Angeles,WA,98363,75,58,6,17,41,0,0,0,1,0,4,1
+85,601963363,Quality Stamping & Machining,1907 137th ave E,Sumner,WA,98391,81,71,0,31,11,17,12,0,0,0,0,0
+86,601971129,TTF Aerospace,4620 B St NW ,Auburn,WA,98001,94,50,12,20,22,7,1,0,0,0,1,11
+87,601974865,Qualitel Corporation,11831 Beverly Park Road,Everett,WA,98204,182,164,2,93,38,33,0,0,0,1,1,0
+88,602027022,Heath Tecna (Zodiac),3225 Woburn Street,Bellingham,WA,98226,483,201,165,107,58,36,0,0,2,12,63,91
+89,602027115,University Swaging Corporation,6525 240th St. SE,Woodinville,WA,98072,187,105,16,16,50,38,1,0,0,1,3,12
+90,602128061,US Castings,14351 Shamel St.,Entiat,WA,98822,71,57,0,34,17,6,0,0,0,0,0,0
+91,602130059,GCM North American Aerospace,21719 84th Ave S.,Kent,WA,98032,156,124,0,23,48,41,12,0,0,0,0,0
+92,602136928,Commercial Aircraft Interiors,5916 195th St NE,Arlington,WA,98223,50,14,0,8,5,1,0,0,0,0,0,0
+93,602223975,Exotic Metals Forming Company,5411 S 226th St. ,Kent,WA,98032,842,669,0,207,301,107,47,0,0,0,0,0
+94,602251379,Triumph Composite Systems,1514 S. Flint Rd,Spokane,WA,99224,613,480,46,178,58,240,0,0,0,2,10,34
+95,602333476,Pacific Propeller International,5802 S. 228th St,Kent,WA,98032,91,56,0,3,11,42,0,0,0,0,0,0
+96,602353075,Triumph Structures Everett,1415 75th St SW,Everett,WA,98203,151,94,8,27,27,39,1,0,0,0,5,3
+97,602410612,Goodrich Aerostructures Integration Services,2615 94th Street SW,Everett,WA,98204,80,53,9,0,20,33,0,0,0,0,2,7
+98,602412516,Cobalt Enterprises,10917 Mountain Loop Hwy,Granite Falls,WA,98252,74,56,0,17,28,8,3,0,0,0,0,0
+99,602436945,Tect Aerospace (Everett),"1515 - 75th Street SW, Suite 500",Everett,WA,98203,226,162,9,0,31,112,19,0,0,0,3,6
+100,602436945,Tect Aerospace (Kent),19420 84th Ave South,Kent,WA,98030,75,54,7,2,19,26,7,0,1,0,0,6
+101,602468581,Astronics Advanced Electronic Systems,125950 Willows Rd NE,Kirkland,WA,98034,396,104,212,3,51,35,15,0,0,2,36,174
+102,602497628,Polaris Manufacturing,103 CEDAR AVE,Marysville,WA,98270,56,37,3,7,18,12,0,0,0,0,3,0
+103,602504566,Triumph Actuation Systems,22922 NE Alder Crest Drive,Redmond,WA,98053,105,31,52,1,12,16,2,0,0,1,5,46
+104,602513985,C & D Zodiac,12810 State Avenue,Marysville,WA,98271,659,428,60,333,60,27,8,0,4,7,16,33
+105,602682584,Senior Operations,6914 204th St NE,Arlington,WA,98223,130,90,5,0,28,30,32,0,1,0,2,2
+106,602682584,Senior Operations (Senior Aerospace - AMT),20100 71st Ave NE,Arlington,WA,98223,398,260,16,133,65,52,10,0,0,0,2,14
+107,602682584,Senior Operations (Senior Aerospace - Damar),14286 169th Drive SE,Monroe,WA,98272,135,63,8,3,28,32,0,0,0,0,0,8
+108,602704980,Western Pneumatic Tube Company,835 6TH ST. S,Kirkland,WA,98033,113,88,0,4,9,62,13,0,0,0,0,0
+109,602814410,Planetechs,PO Box 2910,Tacoma,WA,98401,208,208,0,0,0,208,0,0,0,0,0,0
+110,602849819,VT Volant Aerospace,11817 Westar Lane,Burlington,WA,98233,147,80,17,42,32,6,0,0,0,3,5,9
+111,602907033,Pexco,2405 South 3rd Avenue,Union Gap,WA,98903,216,162,15,49,60,47,6,0,0,5,6,4
+112,603064459,Cablecraft Motion Controls,4401 S. Orchard Street,Tacoma,WA,98466,76,49,5,12,5,25,7,0,0,0,3,2
+113,603068485,Kaiser Aluminum Washington,E 15000 EUCLID,Spokane,WA,99217,942,532,58,11,80,442,0,0,0,0,7,51
+114,603198617,Carlisle Interconnect Technologies,"7911 S 188th St, #100",Kent,WA,98032,746,620,66,521,62,25,12,0,9,13,16,28
+115,603257860,Imaginetics,3410 A Street SE,Auburn,WA,98002,137,84,6,32,28,20,4,0,0,0,2,4
+116,603257948,Custom Control Concepts,6020 190th Street S,Kent,WA,98032,114,65,33,33,33,0,0,0,0,0,2,31
+117,603327495,Zodiac Cabin & Structures Support,12806 State Avenue,Marysville,WA,98271,259,193,14,125,48,19,0,0,4,0,4,7
