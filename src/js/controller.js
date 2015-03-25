@@ -21,7 +21,7 @@ app.controller("TableController", ["$scope", function($scope) {
     if (lastSort == key) {
       direction *= -1;
     } else {
-      direction = e && e.target.classList.contains("number") ? -1 : 1;
+      direction = e && e.target.classList.contains("text") ? 1 : -1;
     }
     lastSort = key;
     $scope.data = window.industryData.sort(function(a, b) {
@@ -30,8 +30,15 @@ app.controller("TableController", ["$scope", function($scope) {
       if (a == b) return 0;
       return a < b ? direction * -1 : direction;
     });
+    $scope.expanded = true;
   };
 
-  $scope.sortOn("name");
+  $scope.sortOn("production.lowest");
+  $scope.data = $scope.data.slice(0, 10);
+
+  $scope.toggleFull = function() {
+    $scope.data = window.industryData;
+    $scope.expanded = true;
+  }
 
 }]);

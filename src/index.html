@@ -11,24 +11,25 @@
 
     <responsive-child>
       <main ng-controller="TableController">
+
         <table class="air-table">
           <thead>
             <tr>
               <th class="name text" ng-click="sortOn('name', $event)"> Name
               <th class="city text" ng-click="sortOn('city', $event)"> City
               <th class="employees number" ng-click="sortOn('employees', $event)"> Employees
-              <th class="engineers number" ng-click="sortOn('engineers.total', $event)"> Engineers
               <th class="production number" ng-click="sortOn('production.total', $event)"> Production staff
-              <th class="production-lowest number" ng-click="sortOn('production.lowPercent', $event)"> $15/hr or less
-              <th class="breakdown-p graph" ng-click="sortOn('production.score', $event)"> Breakdown
+              <th colspan=2 class="production-lowest number" ng-click="sortOn('production.lowest', $event)">
+                Production earning<br>$15/hr or less
+              <th class="breakdown-p graph unsortable"> Wage Breakdown
           </thead>
           <tbody>
             <tr ng-repeat="row in data">
               <td class="name text"> {{row.name}}
               <td class="city text"> {{row.city}}
               <td class="employees number"> {{row.employees | number}}
-              <td class="engineers number"> {{row.engineers.total | number}}
               <td class="production number"> {{row.production.total | number}}
+              <td class="production-lowest-raw number"> {{row.production.lowest}}
               <td class="production-lowest number"> {{row.production.lowest / row.production.total * 100 | number:1}}%
               <td class="breakdown-p graph">
                 <input class="bar-focus" type="radio" name="bar" id="site-{{row.id}}">
@@ -47,14 +48,18 @@
                     <h4>Production breakdown</h4>
                     <ul>
                       <li ng-repeat="segment in row.production.breakdown">
-                        {{segment.label}}: <b>{{segment.data}}</b>
-                        ({{ segment.data / row.production.total * 100 | number:1}}%)
+                        <span class="segment-label">{{segment.label}}:</span>
+                        <span class="segment-data">
+                          <b>{{segment.data}}</b>
+                          ({{ segment.data / row.production.total * 100 | number:1}}%)
+                        </span>
                       </li>
                     </ul>
                   </div>
                 </label>
           </tbody>
         </table>
+        <button class="expander" ng-click="toggleFull()" ng-hide="expanded">Show full results</button>
       </main>
     </responsive-child>
 
@@ -62,9 +67,11 @@
 <%
 var buckets = [0, 15, 20, 30];
 var groups = ["prod", "eng"];
-var labels = ["Under $15", "$15.01 to $20", "$20.01 to $30", "Over $30"];
+var labels = ["Min. to $15", "$15.01 to $20", "$20.01 to $30", "Over $30"];
 
-var companyData = json.AerospaceWorkers_Companies.map(function(row) {
+var companyData = json.AerospaceWorkers_Companies.filter(function(row) {
+  return row.production > 0;
+}).map(function(row) {
   var stats = {
     prod: [],
     eng: []

@@ -13,7 +13,7 @@ main {
   display: block;
   margin: auto;
   max-width: 100%;
-  width: 800px;
+  width: 960px;
 }
 
 .air-table {
@@ -21,15 +21,18 @@ main {
   font-family: @df-sans;
   border-collapse: collapse;
   max-width: 100%;
+  width: 100%;
 
   th, td {
-    padding: 2px 2px 2px 8px;
+    padding: 2px 8px;
   }
 
   th {
     background: @df-dark-gray;
     color: @df-off-white;
     cursor: pointer;
+    border-right: 1px solid white;
+    font-weight: normal;
 
     &.unsortable {
       cursor: default;
@@ -38,6 +41,7 @@ main {
 
   td {
     border-bottom: 1px solid @df-light-gray;
+    border-right: 1px dotted @df-footer-gray;
   }
 
   .number {
@@ -50,7 +54,7 @@ main {
 
   //columns
   @media @mobile {
-    .city, .employees, .engineers, .breakdown-e {
+    .city, .employees, .engineers, .breakdown-e, .production {
       display: none;
     }
   }
@@ -61,11 +65,11 @@ main {
     .display-flex;
     // .align-items(flex-end);
     width: 100%;
-    height: 20px;
+    height: 16px;
     background: #F0F0FF;
 
     .segment {
-      @base: #B00;
+      @base: #C02;
       // .flex(1);
 
       &.over-0 { background: spin(@base, 0%) }
@@ -114,10 +118,37 @@ input.bar-focus {
         padding: 0;
         list-style-type: none;
       }
+
+      li {
+        .display-flex;
+
+        .segment-label, .segment-data {
+          .flex(1);
+          display: inline-block;
+        }
+      }
     }
   }
 
   &:checked + label .tooltip {
     display: block;
+  }
+}
+
+.expander {
+  display: block;
+  background: @df-light-gray;
+  color: @df-dark-gray;
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background .2s linear;
+
+  &:hover {
+    background: darken(@df-light-gray, 10%);
   }
 }
