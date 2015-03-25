@@ -65,14 +65,14 @@ main {
     background: #F0F0FF;
 
     .segment {
-      @base: #102;
+      @base: #B00;
       // .flex(1);
 
-      &.over-0 { background: lighten(@base, 0%) }
-      &.over-10 { background: lighten(@base, 20%) }
-      &.over-15 { background: lighten(@base, 40%) }
-      &.over-20 { background: lighten(@base, 60%) }
-      &.over-30 { background: lighten(@base, 80%) }
+      &.over-0 { background: spin(@base, 0%) }
+      &.over-10 { background: spin(@base, 20%) }
+      &.over-15 { background: spin(@base, 40%) }
+      &.over-20 { background: spin(@base, 60%) }
+      &.over-30 { background: spin(@base, 80%) }
     }
   }
 }

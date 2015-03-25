@@ -17,11 +17,11 @@ app.controller("TableController", ["$scope", function($scope) {
   var lastSort = null;
   var direction = 1;
 
-  $scope.sortOn = function(key) {
+  $scope.sortOn = function(key, e) {
     if (lastSort == key) {
       direction *= -1;
     } else {
-      direction = 1;
+      direction = e && e.target.classList.contains("number") ? -1 : 1;
     }
     lastSort = key;
     $scope.data = window.industryData.sort(function(a, b) {

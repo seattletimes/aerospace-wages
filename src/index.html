@@ -14,13 +14,13 @@
         <table class="air-table">
           <thead>
             <tr>
-              <th class="name text" ng-click="sortOn('name')"> Name
-              <th class="city text" ng-click="sortOn('city')"> City
-              <th class="employees number" ng-click="sortOn('employees')"> Employees
-              <th class="engineers number" ng-click="sortOn('engineers.total')"> Engineers
-              <th class="production number" ng-click="sortOn('production.total')"> Production staff
-              <th class="production-lowest number" ng-click="sortOn('production.lowPercent')"> $15/hr or less
-              <th class="breakdown-p graph" ng-click="sortOn('production.score')"> Breakdown
+              <th class="name text" ng-click="sortOn('name', $event)"> Name
+              <th class="city text" ng-click="sortOn('city', $event)"> City
+              <th class="employees number" ng-click="sortOn('employees', $event)"> Employees
+              <th class="engineers number" ng-click="sortOn('engineers.total', $event)"> Engineers
+              <th class="production number" ng-click="sortOn('production.total', $event)"> Production staff
+              <th class="production-lowest number" ng-click="sortOn('production.lowPercent', $event)"> $15/hr or less
+              <th class="breakdown-p graph" ng-click="sortOn('production.score', $event)"> Breakdown
           </thead>
           <tbody>
             <tr ng-repeat="row in data">
