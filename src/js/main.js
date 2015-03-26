@@ -15,3 +15,14 @@ document.body.addEventListener("click", function(e) {
     if (focused) focused.checked = false;
   }
 });
+
+// document.body.addEventListener("mouseleave", function(e) {
+//   if (e.target != document.body) return;
+//   var focused = document.querySelector("input.bar-focus:checked");
+//   if (focused) focused.checked = false;
+// });
+
+// window.addEventListener("mouseleave", function(e) {
+//   var focused = document.querySelector("input.bar-focus:checked");
+//   if (focused) focused.checked = false;
+// });

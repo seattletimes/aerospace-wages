@@ -16,6 +16,14 @@ main {
   width: 960px;
 }
 
+h2 {
+  margin-bottom: 0;
+}
+
+.chatter {
+
+}
+
 .air-table {
   font-size: 13px;
   font-family: @df-sans;
@@ -91,7 +99,9 @@ input.bar-focus {
       display: none;
       position: absolute;
       top: 8px;
-      right: 100%;
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+      right: 90%;
       box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
       background: white;
       padding: 8px;
@@ -101,11 +111,11 @@ input.bar-focus {
       &::before {
         content: " ";
         position: absolute;
-        top: 0;
+        bottom: 0;
         left: 100%;
         border-style: solid;
-        border-color: white transparent transparent white;
-        border-width: 10px 10px 0 0;
+        border-color: transparent transparent white white;
+        border-width: 10px;
       }
 
       h4 {
@@ -149,4 +159,8 @@ input.bar-focus {
     font-weight: bold;
   }
 
+}
+
+cite {
+  font-size: 14px;
 }

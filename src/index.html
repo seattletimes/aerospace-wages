@@ -11,10 +11,17 @@
   <body>
 
     <responsive-child>
-      <main ng-controller="TableController">
 
-        <a ng-class="{ active: !expanded }" class="filter" ng-click="showFeatured()">Featured companies</a> |
-        <a ng-class="{ active: expanded }" class="filter" ng-click="showAll()">All companies</a>
+      <main ng-controller="TableController">
+        <h2>Table Title Placeholder</h2>
+
+        <p>
+          This paragraph is placeholder text. It should be replaced, although the following instructions may be considered potentially useful. Click on the wage breakdown bar for more details about the number of production workers in each pay range.
+
+        <div class="filter-controls">
+          <a ng-class="{ active: !expanded }" class="filter" ng-click="showFeatured()">Featured companies</a> |
+          <a ng-class="{ active: expanded }" class="filter" ng-click="showAll()">All companies</a>
+        </div>
 
         <table class="air-table" ng-cloak>
           <thead>
@@ -25,7 +32,7 @@
               <th class="production number" ng-click="sortOn('production.total', $event)"> Production staff
               <th colspan=2 class="production-lowest number" ng-click="sortOn('production.lowest', $event)">
                 Production earning<br>$15/hr or less
-              <th class="breakdown-p graph unsortable"> Wage Breakdown
+              <th class="breakdown-p graph unsortable"> Wage breakdown
           </thead>
           <tbody>
             <tr ng-repeat="row in data">
