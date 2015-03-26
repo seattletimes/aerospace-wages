@@ -6,20 +6,17 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
     <%= t.include("partials/_adHead.html") %>
+    <style> [ng-cloak] { display: none; } </style>
   </head>
   <body>
 
     <responsive-child>
       <main ng-controller="TableController">
 
-        Shown: 
+        <a ng-class="{ active: !expanded }" class="filter" ng-click="showFeatured()">Featured companies</a> |
+        <a ng-class="{ active: expanded }" class="filter" ng-click="showAll()">All companies</a>
 
-        <a class="expander" ng-click="toggleFull()">
-          <span ng-hide="expanded">featured companies</span>
-          <span ng-show="expanded">all companies</span>
-        </a>
-
-        <table class="air-table">
+        <table class="air-table" ng-cloak>
           <thead>
             <tr>
               <th class="name text" ng-click="sortOn('name', $event)"> Name
@@ -37,7 +34,7 @@
               <td class="employees number"> {{row.employees | number}}
               <td class="production number"> {{row.production.total | number}}
               <td class="production-lowest-raw number"> {{row.production.lowest}}
-              <td class="production-lowest number"> {{row.production.lowest / row.production.total * 100 | number:1}}%
+              <td class="production-lowest number"> {{row.production.lowest / row.production.total * 100 | number:0}}%
               <td class="breakdown-p graph">
                 <input class="bar-focus" type="radio" name="bar" id="site-{{row.id}}">
                 <label class="bar-focus-label" for="site-{{row.id}}">
@@ -58,7 +55,7 @@
                         <span class="segment-label">{{segment.label}}:</span>
                         <span class="segment-data">
                           <b>{{segment.data}}</b>
-                          ({{ segment.data / row.production.total * 100 | number:1}}%)
+                          ({{ segment.data / row.production.total * 100 | number:0}}%)
                         </span>
                       </li>
                     </ul>
@@ -66,6 +63,7 @@
                 </label>
           </tbody>
         </table>
+        <cite>Source: Washington State Department of Revenue (<a href="https://docs.google.com/spreadsheets/d/1MwloHcs7kUK71VS-AGgDXYTii_U42gRwKoB7V53hqgk/edit?pli=1#gid=0" target="_top">data</a>)</cite>
       </main>
     </responsive-child>
 

@@ -72,11 +72,10 @@ main {
       @base: #C02;
       // .flex(1);
 
-      &.over-0 { background: spin(@base, 0%) }
-      &.over-10 { background: spin(@base, 20%) }
-      &.over-15 { background: spin(@base, 40%) }
-      &.over-20 { background: spin(@base, 60%) }
-      &.over-30 { background: spin(@base, 80%) }
+      &.over-0 { background: @df-navy }
+      &.over-15 { background: @df-blue }
+      &.over-20 { background: @df-orange }
+      &.over-30 { background: @df-goldenrod }
     }
   }
 }
@@ -141,4 +140,13 @@ input.bar-focus {
   &:hover {
     text-decoration: underline;
   }
+}
+
+.filter {
+  cursor: pointer;
+
+  &.active {
+    font-weight: bold;
+  }
+
 }

@@ -46,6 +46,17 @@ app.controller("TableController", ["$scope", function($scope) {
     } else {
       $scope.data = some;
     }
+  };
+
+  $scope.showFeatured = function() {
+    $scope.expanded = false;
+    $scope.data = some;
+  };
+
+  $scope.showAll = function() {
+    $scope.expanded = true;
+    lastSort = null;
+    $scope.sortOn("production.lowest");
   }
 
 }]);
