@@ -12,6 +12,13 @@
     <responsive-child>
       <main ng-controller="TableController">
 
+        Shown: 
+
+        <a class="expander" ng-click="toggleFull()">
+          <span ng-hide="expanded">featured companies</span>
+          <span ng-show="expanded">all companies</span>
+        </a>
+
         <table class="air-table">
           <thead>
             <tr>
@@ -59,7 +66,6 @@
                 </label>
           </tbody>
         </table>
-        <button class="expander" ng-click="toggleFull()" ng-hide="expanded">Show full results</button>
       </main>
     </responsive-child>
 
@@ -106,6 +112,7 @@ var companyData = json.AerospaceWorkers_Companies.filter(function(row) {
     city: row.city,
     zip: row.zip,
     id: row.siteid,
+    featured: row.featured,
     employees: row.employees * 1,
     production: {
       total: row.production * 1,

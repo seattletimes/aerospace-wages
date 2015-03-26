@@ -12,7 +12,10 @@ var get = function(obj, path) {
 
 app.controller("TableController", ["$scope", function($scope) {
 
-  $scope.data = window.industryData;
+  var all = window.industryData;
+  var some = window.industryData.filter(row => row.featured).sort((a, b) => b.production.lowest - a.production.lowest);
+
+  $scope.data = some;
 
   var lastSort = null;
   var direction = 1;
@@ -24,7 +27,7 @@ app.controller("TableController", ["$scope", function($scope) {
       direction = e && e.target.classList.contains("text") ? 1 : -1;
     }
     lastSort = key;
-    $scope.data = window.industryData.sort(function(a, b) {
+    $scope.data = all.sort(function(a, b) {
       a = get(a, key);
       b = get(b, key);
       if (a == b) return 0;
@@ -33,12 +36,16 @@ app.controller("TableController", ["$scope", function($scope) {
     $scope.expanded = true;
   };
 
-  $scope.sortOn("production.lowest");
-  $scope.data = $scope.data.slice(0, 10);
+  $scope.expanded = false;
 
   $scope.toggleFull = function() {
-    $scope.data = window.industryData;
-    $scope.expanded = true;
+    $scope.expanded = !$scope.expanded;
+    if ($scope.expanded) {
+      lastSort = null;
+      $scope.sortOn("production.lowest");
+    } else {
+      $scope.data = some;
+    }
   }
 
 }]);
