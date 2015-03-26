@@ -13,13 +13,13 @@
     <responsive-child>
 
       <main ng-controller="TableController">
-        <h2>Table Title Placeholder</h2>
+        <h2>Wages paid at Washington state’s aerospace plants</h2>
 
-        <p>
-          This paragraph is placeholder text. It should be replaced, although the following instructions may be considered potentially useful. Click on the wage breakdown bar for more details about the number of production workers in each pay range.
+        <p class="chatter">
+          This table displays the latest wage data, as of the end of 2013, provided to the Department of Revenue by the aerospace companies who take the state tax breaks. Data is provided for each separate plant. For example, there are five entries for Boeing, covering its facilities in Seattle, Everett, Renton, Auburn and Frederickson. The entries in the full list are ordered according to the number of production workers at each plant earning less than $15/hr. Click on the wage breakdown bar for more details about the number of production workers in each pay range.
 
         <div class="filter-controls">
-          <a ng-class="{ active: !expanded }" class="filter" ng-click="showFeatured()">Featured companies</a> |
+          <a ng-class="{ active: !expanded }" class="filter" ng-click="showFeatured()">Selected companies</a> |
           <a ng-class="{ active: expanded }" class="filter" ng-click="showAll()">All companies</a>
         </div>
 
