@@ -16,7 +16,7 @@
         <h2>Wages paid at Washington state’s aerospace plants</h2>
 
         <p class="chatter">
-          This table displays the latest wage data, as of the end of 2013, provided to the Washington State Dept. of Revenue by the aerospace companies who take the state tax breaks. Data is provided for each separate plant. For example, there are five entries for Boeing, covering its facilities in Seattle, Everett, Renton, Auburn and Frederickson. 
+          This table displays the latest wage data, as of the end of 2013, provided to the Washington State Dept. of Revenue by the aerospace companies who take the state tax breaks. Data is provided separately for each company location. Only locations with a minimum of 50 total employees are shown. Aero Plastics, which has fewer than 50, is included because it appears in the story.
 
         <p class="chatter">
           Click on the wage breakdown bar for more details about the number of production workers in each pay range, and on each header to sort the table.
@@ -34,8 +34,8 @@
               <th class="employees number" ng-click="sortOn('employees', $event)"> Employees
               <th class="production number" ng-click="sortOn('production.total', $event)"> Production staff
               <th colspan=2 class="production-lowest number" ng-click="sortOn('production.lowest', $event)">
-                Production earning<br>$15/hr or less
-              <th class="breakdown-p graph unsortable"> Wage breakdown
+                Production staff earning<br>$15/hr or less
+              <th class="breakdown-p graph unsortable"> Wage breakdown for production staff
           </thead>
           <tbody>
             <tr ng-repeat="row in data">
@@ -73,7 +73,7 @@
                 </label>
           </tbody>
         </table>
-        <cite>Source: Washington State Department of Revenue (<a href="https://docs.google.com/spreadsheets/d/1MwloHcs7kUK71VS-AGgDXYTii_U42gRwKoB7V53hqgk/edit?pli=1#gid=0" target="_top">data</a>)</cite>
+        <cite>Source: Washington State Department of Revenue (<a href="https://docs.google.com/spreadsheets/d/1MwloHcs7kUK71VS-AGgDXYTii_U42gRwKoB7V53hqgk/edit?pli=1#gid=0" target="_top">report data, including wages of engineers</a>)</cite>
       </main>
     </responsive-child>
 
