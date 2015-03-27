@@ -5,8 +5,8 @@
       "path": "ancient-shape"
     },
     "live": {
-      "bucket": "",
-      "path": ""
+      "bucket": "projects.seattletimes.com",
+      "path": "2015/business/aerospace-wages"
     }
   },
   "title": "",
@@ -15,5 +15,5 @@
   "slug": "",
   "tags": [],
   "sheets": ["1MwloHcs7kUK71VS-AGgDXYTii_U42gRwKoB7V53hqgk"],
-  "production": false
+  "production": true
 }

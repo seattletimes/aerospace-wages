@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <%= t.include("partials/_adHead.html") %>
     <style> [ng-cloak] { display: none; } </style>
   </head>
   <body>
@@ -13,10 +12,10 @@
     <responsive-child>
 
       <main ng-controller="TableController">
-        <h2>Wages paid at Washington state’s aerospace plants</h2>
+        <h2>Wages paid at Washington state’s aerospace manufacturers</h2>
 
         <p class="chatter">
-          This table displays the latest wage data, as of the end of 2013, provided to the Washington State Dept. of Revenue by the aerospace companies who take the state tax breaks. Data is provided separately for each company location. Only locations with a minimum of 50 total employees are shown. Aero Plastics, which has fewer than 50, is included because it appears in the story.
+          This table displays the latest wage data, as of the end of 2013, provided to the Washington State Dept. of Revenue by the aerospace companies who take the state tax breaks. Data is provided separately for each company location. Only locations with a minimum of 50 total employees are shown. Aero Plastics, which has fewer than 50, and ATS, classified as a maintenance and repair operation, are included because they appear in the story. 
 
         <p class="chatter">
           Click on the wage breakdown bar for more details about the number of production workers in each pay range, and on each header to sort the table.
@@ -143,7 +142,6 @@ window.industryData = <%= JSON.stringify(companyData) %>;
     </script>
 
     <script src="app.js"></script>
-    <%= json.project.production ? t.include("partials/_adFoot.html") : "" %>
     <%= json.project.production ? t.include("partials/_workHere.html") : "" %>
   </body>
 </html>
