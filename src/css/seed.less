@@ -25,7 +25,7 @@ h2 {
 }
 
 .air-table {
-  font-size: 13px;
+  font-size: 14px;
   font-family: @df-sans;
   border-collapse: collapse;
   max-width: 100%;
@@ -50,6 +50,10 @@ h2 {
   td {
     border-bottom: 1px solid @df-light-gray;
     border-right: 1px dotted @df-footer-gray;
+  }
+
+  .name {
+    max-width: 200px;
   }
 
   .number {
@@ -154,9 +158,18 @@ input.bar-focus {
 
 .filter {
   cursor: pointer;
+  background: #EEE;
+  background: fade(@df-blue, 5%);
+  font-family: @df-sans;
+  padding: 5px 8px 0;
+  font-size: 13px;
+  text-transform: uppercase;
 
   &.active {
     font-weight: bold;
+    color: @df-dark-gray;
+    background: none;
+    cursor: auto;
   }
 
 }
