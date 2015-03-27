@@ -31,6 +31,10 @@ h2 {
   max-width: 100%;
   width: 100%;
 
+  tr:nth-child(even) {
+    background: #EEE
+  }
+
   th, td {
     padding: 2px 8px;
   }
@@ -45,11 +49,6 @@ h2 {
     &.unsortable {
       cursor: default;
     }
-  }
-
-  td {
-    border-bottom: 1px solid @df-light-gray;
-    border-right: 1px dotted @df-footer-gray;
   }
 
   .name {
@@ -158,10 +157,7 @@ input.bar-focus {
 
 .filter {
   cursor: pointer;
-  background: #EEE;
-  background: fade(@df-blue, 5%);
   font-family: @df-sans;
-  padding: 5px 8px 0;
   font-size: 13px;
   text-transform: uppercase;
 
